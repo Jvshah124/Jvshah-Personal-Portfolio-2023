@@ -28,14 +28,14 @@ html {
   column-gap: 1rem;
 }
 
-.logo p {
+span {
   font-size: 1.75rem;
   font-family: "Wallpoet", sans-serif;
   font-family: "Comforter Brush", cursive;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.logo p span {
+span {
   color: rgb(195, 83, 35);
   font-family: "Comforter Brush", cursive;
   font-size: 3rem;
@@ -180,10 +180,16 @@ header h4 {
   .container {
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 0.87rem;
   }
 
   .logo {
     flex-direction: column;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
   }
 
   .navbar {
@@ -204,19 +210,20 @@ header h4 {
   }
 
   header h2 {
-    font-size: 3.33rem;
+    font-size: 2.85rem;
     font-weight: 600;
     margin-bottom: 1rem;
     line-height: normal;
+    line-height: 4rem;
   }
 
   header h4 {
-    font-size: 2rem;
+    font-size: 1.85rem;
     font-weight: 500;
   }
 
   .right img {
-    width: 300px;
+    width: 200px;
     filter: drop-shadow(3px 3px 11px #740d0d);
   }
 }
