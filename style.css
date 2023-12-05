@@ -135,13 +135,17 @@ header h4 {
 }
 
 .serve {
-  max-width: 50%;
+  /* max-width: 50%; */
   margin-left: auto;
+  padding: 9rem 4.5rem;
 }
 
 .serve h3 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  color: #6e6c6c;
   font-weight: 500;
+  max-width: 70%;
+  margin: auto;
 }
 
 /* RESPONSIVE BREAKPOINTS */
@@ -225,6 +229,21 @@ header h4 {
   .right img {
     width: 200px;
     filter: drop-shadow(3px 3px 11px #740d0d);
+  }
+
+  .serve {
+    /* max-width: 50%; */
+    margin-left: 0;
+    padding: 5rem 2rem;
+  }
+
+  .serve h3 {
+    font-size: 2rem;
+    color: #6e6c6c;
+    font-weight: 400;
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
   }
 }
 
