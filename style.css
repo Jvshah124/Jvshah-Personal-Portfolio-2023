@@ -84,7 +84,7 @@ header h2 {
 header h4 {
   font-size: 2.2rem;
   font-weight: 500;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .btn {
   display: flex;
@@ -169,11 +169,20 @@ header h4 {
   padding: 0.6rem 0.8rem;
   border: 1px solid #c3c3c3;
   border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.works-list li:hover {
+  background-color: #1b1b1b;
 }
 .works-list li a {
   font-size: 1.5rem;
   color: #1b1b1b;
   font-weight: 500;
+}
+
+.works-list li a:hover {
+  color: #fff;
 }
 
 .works-list .active {
@@ -208,6 +217,7 @@ header h4 {
 .box h3 {
   margin: 0;
   text-align: left;
+  margin-bottom: 2rem;
 }
 
 .box small a {
