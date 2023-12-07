@@ -373,11 +373,18 @@ header h4 {
 }
 
 /* FOOTER SECTION STYLES */
-
+.contact {
+  padding-left: 0;
+  padding-right: 0;
+}
 .row {
   display: flex;
   align-items: center;
+  padding-top: 3rem;
   /* justify-content: space-around; */
+  background: #262627;
+  background: conic-gradient(from 315deg, #262627, #9d9996);
+  transition: all 0.5s ease-in-out;
 }
 
 .row .contact-left span {
@@ -387,6 +394,7 @@ header h4 {
 
 .contact-left {
   flex-basis: 35%;
+  padding-left: 3rem;
 }
 
 .contact-left p {
@@ -453,7 +461,10 @@ form textarea {
   padding: 2rem;
   background: #262626;
   font-weight: 400;
-  margin-top: 2em;
+}
+
+.copyright p {
+  margin: 0;
 }
 .copyright span {
   font-size: 1.31rem;
@@ -561,12 +572,71 @@ form textarea {
   .services-list div {
     padding: 2rem;
   }
+
+  .contact {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .contact-left {
+    text-align: center;
+    color: #fff;
+    padding-left: 0;
+  }
+
+  .contact-left p {
+    margin-top: 15px;
+  }
+
+  .contact-left p i {
+    font-size: 2rem;
+  }
+
+  #ctc-footer {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.33rem;
+  }
+
+  .social-icons a {
+    color: #fff;
+    font-size: 2.3rem;
+  }
+
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  form input,
+  form textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+
+  .contact-right .btn {
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 10px 20px 10px;
+  }
 }
 
 /* HERO IMAGE ANIMATION */
 .right img {
   animation: play 3s ease-in-out infinite;
-  animation-delay: 2s;
+  animation-delay: 4s;
 }
 
 @keyframes play {
