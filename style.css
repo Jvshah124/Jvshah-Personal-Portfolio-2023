@@ -568,6 +568,10 @@ form textarea {
     margin-top: 0.87rem;
   }
 
+  .navbar {
+    gap: 2rem;
+  }
+
   .logo {
     flex-direction: column;
   }
