@@ -44,14 +44,15 @@ body {
 
 span {
   font-size: 1.75rem;
-  font-family: "Wallpoet", sans-serif;
-  font-family: "Comforter Brush", cursive;
+
+  font-family: "Smooch", cursive;
+
   font-weight: 700;
   letter-spacing: 2px;
 }
 span {
   color: rgb(195, 83, 35);
-  font-family: "Comforter Brush", cursive;
+  font-family: "Smooch", cursive;
   font-size: 3rem;
 }
 .container img {
