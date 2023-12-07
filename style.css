@@ -47,7 +47,7 @@ span {
   font-family: "Wallpoet", sans-serif;
   font-family: "Comforter Brush", cursive;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 span {
   color: rgb(195, 83, 35);
@@ -94,7 +94,7 @@ header {
   transition: all 0.3s ease;
 }
 
-header h2 {
+header h1 {
   font-size: 4.5rem;
   line-height: 6.5rem;
   font-weight: 600;
@@ -162,8 +162,9 @@ header h4 {
 }
 
 .about h2 {
+  color: #ab1243;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 .about p {
@@ -172,7 +173,7 @@ header h4 {
 
 .about h3 {
   font-size: 2rem;
-  color: #6e6c6c;
+  color: #434040;
   font-weight: 500;
   max-width: 70%;
   margin: auto;
@@ -261,10 +262,17 @@ header h4 {
 
 .box small a {
   text-decoration: underline;
+  letter-spacing: 1px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.33rem;
   color: rgb(195, 83, 35);
+  color: #ab1243;
   font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.box small a:hover {
+  text-decoration: none;
 }
 
 .grid .box {
@@ -275,6 +283,64 @@ header h4 {
 }
 
 /* WORK SECTION STYLE END */
+
+/* SERVICES SECTION STYLE */
+
+.services-list {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.services-list div {
+  background: #262626;
+  padding: 4rem;
+  font-size: 1.33rem;
+  font-weight: 400;
+  border-radius: 11px;
+  box-shadow: 3px 3px 11px #181818;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+  color: #fff;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.services-list div h3 {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.services-list div p {
+  color: #c3c3c3;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-list div a {
+  color: #cccc;
+  text-decoration: underline;
+  transition: all 0.3s ease-in;
+}
+
+.services-list div a:hover {
+  text-decoration: none;
+}
+
+.services-list div:hover {
+  background: #ab1243;
+  /* background: rgb(195, 83, 35); */
+  cursor: pointer;
+  transform: translateY(-7px);
+}
 
 /* RESPONSIVE BREAKPOINTS */
 
