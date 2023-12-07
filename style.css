@@ -107,7 +107,7 @@ header h4 {
   font-weight: 500;
   margin-bottom: 3rem;
 }
-.btn {
+.left .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,15 +124,36 @@ header h4 {
 }
 
 .btn i {
-  background-color: rgb(9, 61, 157);
+  background-color: #ab1243;
   color: #fff;
   width: 40px;
   height: 40px;
-  padding: 11px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
   border-radius: 33px;
-  transform: rotate(-45deg);
   transition: all 0.3s ease;
+  animation: tiktok 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes tiktok {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  75% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .btn i:hover {
@@ -215,7 +236,12 @@ header h4 {
 .works-list .active a:hover {
   color: #1b1b1b;
 }
-
+.work-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
 .work-btn a {
   background-color: transparent;
   color: #1b1b1b;
