@@ -298,6 +298,8 @@ header h4 {
 }
 
 .services-list div {
+  position: relative;
+  z-index: 99991;
   background: #262626;
   padding: 4rem;
   font-size: 1.33rem;
@@ -307,6 +309,33 @@ header h4 {
   transition: background 0.5s, transform 0.5s;
 }
 
+.design {
+  position: absolute;
+  top: 12%;
+  left: 75%;
+  z-index: -1;
+}
+.design img {
+  animation: playin 3s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes playin {
+  0% {
+    transform: translateY(0);
+    filter: drop-shadow(none);
+  }
+
+  50% {
+    transform: translateY(-25px);
+    filter: drop-shadow(1px 1px 5px #c3c3c3);
+  }
+
+  100% {
+    transform: translateY(0);
+    filter: drop-shadow(none);
+  }
+}
 .services-list div i {
   color: #fff;
   font-size: 5rem;
@@ -440,6 +469,10 @@ header h4 {
     margin: 0;
     margin-bottom: 3rem;
     text-align: center;
+  }
+
+  .services-list div {
+    padding: 2rem;
   }
 }
 
