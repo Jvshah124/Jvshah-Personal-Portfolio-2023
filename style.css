@@ -452,6 +452,12 @@ form textarea {
   background-color: #ab1243;
   color: #fff;
   border-radius: 7px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-right .btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 11px #ab1243;
 }
 
 .copyright {
