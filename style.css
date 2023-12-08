@@ -14,16 +14,18 @@ html {
 }
 
 body {
+  transition: background-color 0.5s;
+
   /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=0e0d0e&c2=ececee&gt=c&gd=dtr
 */
-  background: rgba(14, 13, 14, 1);
-  background: conic-gradient(
+  /* background: rgba(14, 13, 14, 1); */
+  /* background: conic-gradient(
     from 45deg,
     rgb(177, 174, 177),
     rgba(236, 236, 238, 1)
-  );
+  ); */
 }
 
 /* NAVBAR STYLES */
@@ -113,6 +115,95 @@ span {
   font-weight: 500;
   color: #1b1b1b;
 }
+
+/* DARK MODE--------------------------------------- */
+
+/* Styles for the toggle */
+
+.switch {
+  position: relative;
+
+  display: inline-block;
+
+  width: 60px;
+
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+
+  width: 0;
+
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 0;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: #ccc;
+
+  transition: 0.4s;
+
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+
+  content: "";
+
+  height: 26px;
+
+  width: 26px;
+
+  left: 4px;
+
+  bottom: 4px;
+
+  background-color: white;
+
+  transition: 0.4s;
+
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Dark Mode styles */
+
+.dark-mode {
+  background-color: #feeefa;
+}
+
+.dark-mode .slider {
+  background-color: #888;
+}
+
+.dark-mode input:checked + .slider {
+  background-color: #0da10d;
+}
+
+.dark-mode input:checked + .slider:before {
+  background-color: #bbdefb;
+}
+
+/* DARK MODE END----------------------------------------------- */
 
 header {
   display: flex;
@@ -530,6 +621,7 @@ form textarea {
   font-size: 1.31rem;
   margin-left: 0.92rem;
 }
+
 /* RESPONSIVE BREAKPOINTS */
 
 @media (max-width: 1040px) {
@@ -764,6 +856,59 @@ form textarea {
   }
 }
 
+@media (max-width: 455px) {
+  .switch {
+    position: relative;
+
+    display: inline-block;
+
+    width: 54px;
+
+    height: 24px;
+  }
+
+  .slider {
+    position: absolute;
+
+    cursor: pointer;
+
+    top: 6px;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: -6px;
+
+    background-color: #ccc;
+
+    transition: 0.4s;
+
+    border-radius: 34px;
+  }
+  .slider:before {
+    position: absolute;
+
+    content: "";
+
+    height: 16px;
+
+    width: 16px;
+
+    left: 4px;
+    bottom: px;
+
+    background-color: white;
+
+    transition: 0.4s;
+
+    border-radius: 50%;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(30px);
+  }
+}
 /* HERO IMAGE ANIMATION */
 .right img {
   animation: play 3s ease-in-out infinite;
