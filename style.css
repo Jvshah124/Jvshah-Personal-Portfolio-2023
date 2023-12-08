@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  transition: background-color 0.5s;
+  transition: background 0.5s ease-in-out;
 
   /*
 * Created with https://www.css-gradient.com
@@ -188,7 +188,12 @@ input:checked + .slider:before {
 /* Dark Mode styles */
 
 .dark-mode {
-  background-color: #feeefa;
+  /* background-color: #feeefa; */
+  background: conic-gradient(
+    from 45deg,
+    rgb(177, 174, 177),
+    rgba(236, 236, 238, 1)
+  );
 }
 
 .dark-mode .slider {
