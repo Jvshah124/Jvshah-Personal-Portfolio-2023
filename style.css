@@ -287,8 +287,8 @@ header h4 {
 
 .btn a:hover {
   background-color: rgba(44, 43, 43, 0.9);
-
-  /* opacity: 0.8; */
+  transform: translateY(-3px);
+  filter: drop-shadow(7px 7px 3px #1b1b1b);
 }
 
 .right {
