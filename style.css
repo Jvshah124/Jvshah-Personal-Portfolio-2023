@@ -15,7 +15,7 @@ html {
 
 body {
   transition: background 0.5s ease-in-out;
-
+  position: relative;
   /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=0e0d0e&c2=ececee&gt=c&gd=dtr
@@ -190,7 +190,7 @@ input:checked + .slider:before {
 .dark-mode {
   /* background-color: #feeefa; */
   background: conic-gradient(
-    from 45deg,
+    from -40deg,
     rgb(177, 174, 177),
     rgba(236, 236, 238, 1)
   );
@@ -610,6 +610,17 @@ form textarea {
   box-shadow: 1px 1px 11px #ab1243;
 }
 
+.gotop-btn i {
+  position: fixed;
+  color: #ffff;
+  background-color: #ab1243;
+  bottom: 100px;
+  right: 50px;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 33px;
+}
+
 .copyright {
   width: 100%;
   text-align: center;
@@ -791,6 +802,11 @@ form textarea {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 10px 20px 10px;
+  }
+
+  .contact .gotop-btn i {
+    bottom: 85px;
+    right: 50px;
   }
 }
 
