@@ -627,6 +627,8 @@ form textarea {
   color: #fff;
   padding: 2rem;
   background: #262626;
+  letter-spacing: 2px;
+  font-size: 1.43rem;
   font-weight: 400;
 }
 
@@ -634,7 +636,7 @@ form textarea {
   margin: 0;
 }
 .copyright span {
-  font-size: 1.31rem;
+  font-size: 1.51rem;
   margin-left: 0.92rem;
 }
 
